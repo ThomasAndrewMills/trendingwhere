@@ -3,7 +3,8 @@ html, body {
 }
 
 #map {
-    height: 100%;
+    height: 50%;
+    position:relative;
 }
 
 #menu{
