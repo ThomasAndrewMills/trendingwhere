@@ -19,3 +19,7 @@ html, body {
     box-shadow:         0px 0px 14px 0px rgba(50, 50, 50, 0.75);
     top: 10%; left: 15%; z-index: 99;
 }
+
+#overlay{
+    background-image:url(overlay.png);
+}
