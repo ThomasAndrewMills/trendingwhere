@@ -5,3 +5,11 @@ html, body {
 #map {
     height: 100%;
 }
+
+#menu{
+    background-color: white;
+    width:800px;
+    height:300px;
+    margin-right:auto;
+    margin-left:auto;
+}
