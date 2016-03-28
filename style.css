@@ -12,4 +12,5 @@ html, body {
     height:300px;
     margin-right:auto;
     margin-left:auto;
+    position:absolute;
 }
