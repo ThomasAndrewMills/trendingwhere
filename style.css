@@ -23,5 +23,6 @@ html, body {
 #overlay{
     background-image:url(overlay.png);
     position:absolute;
-    top: 10%; left: 15%; z-index: 99;
+    width:100%;
+    height:100%;
 }
