@@ -13,8 +13,9 @@ html, body {
     height:300px;
     margin-right:auto;
     margin-left:auto;
-    position:fixed;
+    position:absolute;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 0px 14px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 14px 0px rgba(50, 50, 50, 0.75);
+    top: 10px; left: 10px; z-index: 99;
 }
