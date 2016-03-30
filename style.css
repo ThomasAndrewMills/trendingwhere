@@ -9,8 +9,8 @@ html, body {
 
 #mainMenu{
     background-image:url(overlay.png);
-    width:950px;
-    height:500px;
+    width:70%;
+    height:50%;
     margin-right:auto;
     margin-left:auto;
     position:absolute;
