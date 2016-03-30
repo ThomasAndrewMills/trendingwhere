@@ -8,7 +8,7 @@ html, body {
 }
 
 #mainMenu{
-    background-image:url(overlay.png);
+
     width:950px;
     height:500px;
     margin-right:auto;
@@ -32,4 +32,5 @@ html, body {
     height:100%;
     z-index: 1;
     position: absolute;
+    background-image:url(overlay.png);
 }
