@@ -5,13 +5,12 @@ html, body {
 #map {
     height: 100%;
     position:relative;
-    z-index:99;
 }
 
 #mainMenu{
     background-image:url(overlay.png);
-    width:70%;
-    height:50%;
+    width:950px;
+    height:500px;
     margin-right:auto;
     margin-left:auto;
     position:absolute;
