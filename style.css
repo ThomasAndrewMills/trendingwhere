@@ -15,6 +15,7 @@ html, body {
     margin-left:auto;
     position:absolute;
     z-index: 99;
+    top: 12.5%; left: 12.5%
 }
 
 .title{
