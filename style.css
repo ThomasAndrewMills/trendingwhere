@@ -9,15 +9,15 @@ html, body {
 }
 
 #mainMenu{
-    width:1000px;
+    width:940px;
     z-index: 99;
     margin-right:auto;
     margin-left:auto;
     position: absolute;
     top: 100px; left: 0px; bottom: 0; right: 0;
-    border-radius: 40px;
+    border-radius: 20px;
     padding:10px;
-    height:600px;
+    height:405px;
     background-color: rgba(0, 0, 0, 0.6);
     background: rgba(0, 0, 0, 0.6);
     color:white;
@@ -30,9 +30,7 @@ html, body {
 #menuItem1{
     display: inline-block;
     float:left;
-    border-right: 3px solid white;
     padding-left:1%;
-    padding-right:20%;
     height: 100%;
 }
 
@@ -44,7 +42,8 @@ html, body {
 #menuItem2{
     display: inline-block;
     height:100%;
-    float:right;
+    float:left;
+    margin-top:200px;
 
 }
 
@@ -56,7 +55,7 @@ html, body {
 }
 
 #overlay{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     width:100%;
     height:100%;
     z-index: 1;
@@ -64,12 +63,21 @@ html, body {
 }
 
 #trendsMenu{
-    width:500px;
-    height:300px;
+    width:590px;
+    height:270px;
     border-radius:10px;
     -moz-box-shadow: 0px 0px 30px #000000;
     -webkit-box-shadow: 0px 0px 30px #000000;
     box-shadow: 0px 0px 30px #000000;
     padding:10px;
+    margin:10px;
+}
+.trend{
+    width:190px;
+    height:20px;
+    font-family: 'Open Sans', sans-serif;
+}
 
+#trendsGroup{
+    display:inline-block;
 }
