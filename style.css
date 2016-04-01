@@ -29,10 +29,15 @@ html, body {
 #menuItem1{
     display: inline-block;
     float:left;
-    border-right: 1px solid white;
+    border-right: 3px solid white;
     padding-left:1%;
     padding-right:20%;
     height: 100%;
+}
+
+#imageHolder{
+    border: 1px solid white;
+    height:50%;
 }
 
 #menuItem2{
