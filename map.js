@@ -13,5 +13,6 @@ function initMap() {
             stylers: [{ visibility: 'off' }]  // Turn off bus stations, train stations, etc.
         }],
         disableDoubleClickZoom: true
+
     });
 }
