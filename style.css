@@ -8,13 +8,15 @@ html, body {
 }
 
 #mainMenu{
-    width:75%;
-    height:50%;
-    margin-right:auto;
-    margin-left:auto;
-    position:absolute;
+    width:400px;
+
+
     z-index: 99;
-    top: 12.5%; left: 12.5%
+
+
+    margin: auto;
+    position: absolute;
+    top: 80px; left: 0; bottom: 0; right: 0;
 }
 
 .title{
