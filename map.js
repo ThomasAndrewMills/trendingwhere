@@ -1,6 +1,4 @@
-/**
- * Created by 1403198 on 19/02/2016.
- */
+//DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 0, lng: 0},
