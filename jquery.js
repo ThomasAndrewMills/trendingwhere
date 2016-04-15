@@ -2,7 +2,8 @@
 var center = new google.maps.LatLng(55.864237,-4.251806);
 
 // marker position
-var city = new google.maps.LatLng(55.864237,-4.251806);
+var city1 = new google.maps.LatLng(55.864237,-4.251806);
+var city2 = new google.maps.LatLng(57.149717,-2.094278);
 
 function initialize() {
     var mapOptions = {
@@ -53,9 +54,16 @@ function initialize() {
 
     // marker options
     var marker = new google.maps.Marker({
-        position: city,
+        position: city1,
         map: map,
         title:"Glasgow"
+    });
+
+    // marker options
+    var marker = new google.maps.Marker({
+        position: city2,
+        map: map,
+        title:"Aberdeen"
     });
 
     // This event expects a click on a marker
