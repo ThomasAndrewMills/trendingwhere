@@ -206,8 +206,6 @@ function initialize() {
         // Removes white background DIV
         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
 
-        // Changes the desired tail shadow color.
-        iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
 
         // Reference to the div that groups the close button elements.
         var iwCloseBtn = iwOuter.next();
