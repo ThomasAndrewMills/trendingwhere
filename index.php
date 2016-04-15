@@ -51,7 +51,6 @@
                         echo $content;
 
                         ?>
-                        <a href="https://api.twitter.com/oauth/authorize?<?php$request_token?>">CLICK HERE TO LOGIN</a>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
                 <br>
