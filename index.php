@@ -36,6 +36,7 @@
                 <br>
                     <span class="subtitle">
                         <?php
+
                         require "twitteroauth/autoload.php";
                         use Abraham\TwitterOAuth\TwitterOAuth;
 
@@ -44,13 +45,10 @@
                             return $connection;
                         }
 
-                        $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
-                        //$content = $connection->POST("oauth/access_token");
+                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ','455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI', 'lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL');
+                        $content = $connection->get("account/verify_credentials");
 
-                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => OAUTH_CALLBACK));
-
-                        echo $request_token;
-                        //print_r($content);
+                        echo $content;
 
                         ?>
                         <a href="https://api.twitter.com/oauth/authorize?<?php$request_token?>">CLICK HERE TO LOGIN</a>
