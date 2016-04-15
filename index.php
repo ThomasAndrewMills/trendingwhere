@@ -48,7 +48,7 @@
                         $content = $connection->post("oauth/request_token");
 
 
-                        print_r($content);
+                        echo($content);
 
                         ?>
                         <a href="https://api.twitter.com/oauth/authorize?oauth_token=OAtCFNvjagzQCoHp5sJU2KtuE">CLICK HERE TO LOGIN</a>
