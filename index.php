@@ -47,7 +47,7 @@
                         $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
                         $content = $connection->get("statuses/home_timeline");
 
-                        echo($content);
+                        echo($content[1]);
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
