@@ -35,6 +35,14 @@
                 <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
                 <br>
                     <span class="subtitle">
+                        <?php
+                        //one
+                        $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
+
+                        //two
+                        $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => "nMznkpFRTMCuNMsmALzel9FgPlmWQDWg"]);
+
+                        ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
                 <br>
