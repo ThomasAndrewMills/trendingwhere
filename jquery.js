@@ -40,8 +40,7 @@ function initialize() {
                                 '<div class="trend">Trend9</div>' +
                                 '<div class="trend">Trend10</div>' +
                             '</div>' +
-                        '</div>'
-        ;
+                        '</div>';
 
     //The pop-up trends menu
     var infowindow = new google.maps.InfoWindow({
