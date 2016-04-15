@@ -206,13 +206,13 @@ function initialize() {
         // Removes white background DIV
         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
 
-
+        // Moves the infowindow 115px to the right.
+        iwOuter.parent().parent().css({left: '295px'});
 
         // Moves the shadow of the arrow 76px to the left margin.
         iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 20px !important;'});
 
-        // Moves the arrow 76px to the left margin.
-        iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 20px !important;'});
+
 
         // Changes the desired tail shadow color.
         iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
