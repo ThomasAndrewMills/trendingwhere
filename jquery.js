@@ -1,9 +1,6 @@
 // map center
 var center = new google.maps.LatLng(55.864237,-4.251806);
 
-// marker position
-var city1 = new google.maps.LatLng(55.864237,-4.251806);
-var city2 = new google.maps.LatLng(57.149717,-2.094278);
 
 function initialize() {
     var mapOptions = {
@@ -52,6 +49,21 @@ function initialize() {
         content: content
     });
 
+    //////////////////////ADD MORE MARKERS HERE////////////////////
+
+    // marker positions
+    var city1 = new google.maps.LatLng(55.864237,-4.251806);
+    var city2 = new google.maps.LatLng(57.149717,-2.094278);
+    var city3 = new google.maps.LatLng(55.953252,-3.188267);
+    var city4 = new google.maps.LatLng(51.507351,-0.127758);
+    var city5 = new google.maps.LatLng(43.106456,-76.217705);
+    var city6 = new google.maps.LatLng(53.480759,-2.242631);
+    var city7 = new google.maps.LatLng(40.712784,-74.005941);
+    var city8 = new google.maps.LatLng(48.856614,2.352222);
+    var city9 = new google.maps.LatLng(52.520007,13.404954);
+    var city10 = new google.maps.LatLng(55.755826,37.6173);
+    var city11 = new google.maps.LatLng(28.613939,77.209021);
+
     // marker options
     var marker1 = new google.maps.Marker({
         position: city1,
@@ -66,6 +78,61 @@ function initialize() {
         title:"Aberdeen"
     });
 
+    var marker3 = new google.maps.Marker({
+        position: city3,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker4 = new google.maps.Marker({
+        position: city4,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker5 = new google.maps.Marker({
+        position: city5,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker6 = new google.maps.Marker({
+        position: city6,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker7 = new google.maps.Marker({
+        position: city7,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker8 = new google.maps.Marker({
+        position: city8,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker9 = new google.maps.Marker({
+        position: city9,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker10 = new google.maps.Marker({
+        position: city10,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    var marker11 = new google.maps.Marker({
+        position: city11,
+        map: map,
+        title:"Aberdeen"
+    });
+
+    ////////////////////ADD MORE MARKERS HERE/////////////////////
     // This event expects a click on a marker
     // When this event is fired the Info Window is opened.
     google.maps.event.addListener(marker1, 'click', function() {
