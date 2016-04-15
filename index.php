@@ -45,7 +45,7 @@
                         }
 
                         $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
-                        $content = $connection->POST("oauth/request_token");
+                        $content = $connection->POST("oauth/access_token");
 
 
                         print_r($content);
