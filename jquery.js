@@ -1,6 +1,7 @@
-var markerPos = new google.maps.LatLng(55.864237,-4.251806);
+
 
 function initialize() {
+    var markerPos = new google.maps.LatLng(55.864237,-4.251806);
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions = {
         center: new google.maps.LatLng(55.864237,-4.251806),
         zoom: 7,
