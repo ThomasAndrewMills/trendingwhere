@@ -53,7 +53,7 @@
                         //print_r($content);
 
                         ?>
-                        <a href="https://api.twitter.com/oauth/authorize?oauth_token=OAtCFNvjagzQCoHp5sJU2KtuE">CLICK HERE TO LOGIN</a>
+                        <a href="https://api.twitter.com/oauth/authorize?<?$request_token?>">CLICK HERE TO LOGIN</a>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
                 <br>
