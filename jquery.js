@@ -53,14 +53,14 @@ function initialize() {
     });
 
     // marker options
-    var marker = new google.maps.Marker({
+    var marker1 = new google.maps.Marker({
         position: city1,
         map: map,
         title:"Glasgow"
     });
 
     // marker options
-    var marker = new google.maps.Marker({
+    var marker2 = new google.maps.Marker({
         position: city2,
         map: map,
         title:"Aberdeen"
@@ -68,8 +68,14 @@ function initialize() {
 
     // This event expects a click on a marker
     // When this event is fired the Info Window is opened.
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
+    google.maps.event.addListener(marker1, 'click', function() {
+        infowindow.open(map,marker1);
+    });
+
+    // This event expects a click on a marker
+    // When this event is fired the Info Window is opened.
+    google.maps.event.addListener(marker2, 'click', function() {
+        infowindow.open(map,marker2);
     });
 
     // Event that closes the Info Window with a click on the map
