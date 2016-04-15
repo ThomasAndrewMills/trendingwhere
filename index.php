@@ -36,6 +36,8 @@
                 <br>
                     <span class="subtitle">
                         <?php
+
+                        $connection = null;
                         //one
                         $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
 
