@@ -2,7 +2,7 @@
 var center = new google.maps.LatLng(55.864237,-4.251806);
 
 // marker position
-var factory = new google.maps.LatLng(55.864237,-4.251806);
+var city = new google.maps.LatLng(55.864237,-4.251806);
 
 function initialize() {
     var mapOptions = {
@@ -53,9 +53,9 @@ function initialize() {
 
     // marker options
     var marker = new google.maps.Marker({
-        position: factory,
+        position: city,
         map: map,
-        title:"London"
+        title:"Glasgow"
     });
 
     // This event expects a click on a marker
