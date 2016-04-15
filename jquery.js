@@ -19,8 +19,7 @@ function initialize() {
 
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
-
-    // InfoWindow content
+    //pop up trends menu
     var content =       '<div class="trendsMenuContainer">' +
                             '<div class="cityTitle">' +
                                 'CITY NAME' +
@@ -44,12 +43,10 @@ function initialize() {
                         '</div>'
         ;
 
-    // A new Info Window is created and set content
+    //The pop-up trends menu
     var infowindow = new google.maps.InfoWindow({
         content: content
     });
-
-    //////////////////////ADD MORE MARKERS HERE////////////////////
 
     // marker positions
     var city1 = new google.maps.LatLng(55.864237,-4.251806);
@@ -132,6 +129,7 @@ function initialize() {
         title:"Aberdeen"
     });
 
+    //marker listeners
     google.maps.event.addListener(marker1, 'click', function() {
         infowindow.open(map,marker1);
     });
@@ -183,21 +181,11 @@ function initialize() {
         infowindow.close();
     });
 
-    // *
-    // START INFOWINDOW CUSTOMIZE.
-    // The google.maps.event.addListener() event expects
-    // the creation of the infowindow HTML structure 'domready'
-    // and before the opening of the infowindow, defined styles are applied.
-    // *
     google.maps.event.addListener(infowindow, 'domready', function() {
 
         // Reference to the DIV that wraps the bottom of infowindow
         var iwOuter = $('.gm-style-iw');
 
-        /* Since this div is in a position prior to .gm-div style-iw.
-         * We use jQuery and create a iwBackground variable,
-         * and took advantage of the existing reference .gm-style-iw for the previous div with .prev().
-         */
         var iwBackground = iwOuter.prev();
 
         // Removes background shadow DIV
