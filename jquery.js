@@ -1,7 +1,7 @@
 
-
+var markerPos = new google.maps.LatLng(55.864237,-4.251806);
 function initialize() {
-    var markerPos = new google.maps.LatLng(55.864237,-4.251806);
+
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions = {
         center: new google.maps.LatLng(55.864237,-4.251806),
         zoom: 7,
@@ -9,7 +9,7 @@ function initialize() {
         disableDoubleClickZoom: false
     });
 
-var contentString = '<div class="trendsMenuContainer">' +
+    var contentString = '<div class="trendsMenuContainer">' +
                         '<div class="cityTitle">' +
                             'Glasgow' +
                         '</div>' +
@@ -61,10 +61,8 @@ var contentString = '<div class="trendsMenuContainer">' +
     // and before the opening of the infowindow, defined styles are applied.
     // *
     google.maps.event.addListener(infowindow, 'domready', function() {
-
         // Reference to the DIV that wraps the bottom of infowindow
         var iwOuter = $('.gm-style-iw');
-
         /* Since this div is in a position prior to .gm-div style-iw.
          * We use jQuery and create a iwBackground variable,
          * and took advantage of the existing reference .gm-style-iw for the previous div with .prev().
