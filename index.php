@@ -45,10 +45,10 @@
                         }
 
                         $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
-                        $content = $connection->post("oauth/request_token");
+                        $content = $connection->POST("oauth/request_token");
 
-                        echo "test";
-                        echo $content;
+
+                        print_r($content);
 
                         ?>
                         <a href="https://api.twitter.com/oauth/authorize?oauth_token=OAtCFNvjagzQCoHp5sJU2KtuE">CLICK HERE TO LOGIN</a>
