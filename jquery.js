@@ -55,7 +55,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: factory,
         map: map,
-        title:"London"
+        title:"Glasgow"
     });
 
     // This event expects a click on a marker
