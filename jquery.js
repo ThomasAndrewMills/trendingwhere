@@ -132,18 +132,51 @@ function initialize() {
         title:"Aberdeen"
     });
 
-    ////////////////////ADD MORE MARKERS HERE/////////////////////
-    // This event expects a click on a marker
-    // When this event is fired the Info Window is opened.
     google.maps.event.addListener(marker1, 'click', function() {
         infowindow.open(map,marker1);
     });
 
-    // This event expects a click on a marker
-    // When this event is fired the Info Window is opened.
     google.maps.event.addListener(marker2, 'click', function() {
         infowindow.open(map,marker2);
     });
+
+    google.maps.event.addListener(marker3, 'click', function() {
+        infowindow.open(map,marker3);
+    });
+
+    google.maps.event.addListener(marker4, 'click', function() {
+        infowindow.open(map,marker4);
+    });
+
+    google.maps.event.addListener(marker5, 'click', function() {
+        infowindow.open(map,marker5);
+    });
+
+    google.maps.event.addListener(marker6, 'click', function() {
+        infowindow.open(map,marker6);
+    });
+
+    google.maps.event.addListener(marker7, 'click', function() {
+        infowindow.open(map,marker7);
+    });
+
+    google.maps.event.addListener(marker8, 'click', function() {
+        infowindow.open(map,marker8);
+    });
+
+    google.maps.event.addListener(marker9, 'click', function() {
+        infowindow.open(map,marker9);
+    });
+
+    google.maps.event.addListener(marker10, 'click', function() {
+        infowindow.open(map,marker10);
+    });
+
+    google.maps.event.addListener(marker11, 'click', function() {
+        infowindow.open(map,marker11);
+    });
+
+    ////////////////////ADD MORE MARKERS HERE/////////////////////
 
     // Event that closes the Info Window with a click on the map
     google.maps.event.addListener(map, 'click', function() {
