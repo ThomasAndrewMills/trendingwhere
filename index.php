@@ -47,8 +47,11 @@
                         $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
                         $content = $connection->get("statuses/home_timeline");
 
-                        echo($content[0]);
+
+                        print_r($content);
+
                         ?>
+                        <a href="https://api.twitter.com/oauth/authorize?oauth_token=Z6eEdO8MOmk394WozF5oKyuAv855l4Mlqo7hhlSLik">CLICK HERE TO LOGIN</a>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
                 <br>
