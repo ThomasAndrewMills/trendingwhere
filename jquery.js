@@ -1,22 +1,12 @@
-// map center
-var center = new google.maps.LatLng(55.864237,-4.251806);
-
-// marker position
-var factory = new google.maps.LatLng(55.864237,-4.251806);
-
 function initialize() {
-    var mapOptions = {
-        center: center,
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions = {
+        center: new google.maps.LatLng(55.864237,-4.251806),
         zoom: 7,
         disableDefaultUI: true,
         disableDoubleClickZoom: false
-    };
+    });
 
-    var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
-
-
-    // InfoWindow content
-    var content =       '<div class="trendsMenuContainer">' +
+var contentString = '<div class="trendsMenuContainer">' +
                         '<div class="cityTitle">' +
                             'Glasgow' +
                         '</div>' +
@@ -36,8 +26,7 @@ function initialize() {
                             '<div class="trend">Trend9</div>' +
                             '<div class="trend">Trend10</div>' +
                         '</div>' +
-                    '</div>'
-                    ;
+                    '</div>';
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
@@ -46,7 +35,7 @@ function initialize() {
 
     // marker options
     var marker = new google.maps.Marker({
-        position: factory,
+        position: new google.maps.LatLng(55.864237,-4.251806),
         map: map,
         title:"Glasgow"
     });
