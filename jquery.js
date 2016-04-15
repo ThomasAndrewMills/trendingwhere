@@ -1,4 +1,4 @@
-// map center
+//defining the center of the map
 var center = new google.maps.LatLng(55.864237,-4.251806);
 
 
@@ -174,34 +174,26 @@ function initialize() {
         infowindow.open(map,marker11);
     });
 
-    ////////////////////ADD MORE MARKERS HERE/////////////////////
-
-    // Event that closes the Info Window with a click on the map
+    // close pop-up menu
     google.maps.event.addListener(map, 'click', function() {
         infowindow.close();
     });
 
     google.maps.event.addListener(infowindow, 'domready', function() {
 
-        // Reference to the DIV that wraps the bottom of infowindow
         var iwOuter = $('.gm-style-iw');
 
         var iwBackground = iwOuter.prev();
 
-        // Removes background shadow DIV
         iwBackground.children(':nth-child(2)').css({'display' : 'none'});
 
-        // Removes white background DIV
         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
 
-        // Changes the desired tail shadow color.
         iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
 
-        // Reference to the div that groups the close button elements.
         var iwCloseBtn = iwOuter.next();
 
         iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
-
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
