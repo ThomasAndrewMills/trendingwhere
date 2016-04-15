@@ -22,7 +22,7 @@ class Config
      */
     protected $decodeJsonAsArray = false;
     /** @var string User-Agent header */
-    protected $userAgent = 'TwitterOAuth (+https://twitteroauth.com)';
+    protected $userAgent = 'TwitterOAuth (+https://oauth.com)';
     /** @var array Store proxy connection details */
     protected $proxy = [];
 
