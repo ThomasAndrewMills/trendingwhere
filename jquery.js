@@ -1,3 +1,5 @@
+var markerPos = new google.maps.LatLng(55.864237,-4.251806);
+
 function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions = {
         center: new google.maps.LatLng(55.864237,-4.251806),
@@ -35,7 +37,7 @@ var contentString = '<div class="trendsMenuContainer">' +
 
     // marker options
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.864237,-4.251806),
+        position: markerPos,
         map: map,
         title:"Glasgow"
     });
