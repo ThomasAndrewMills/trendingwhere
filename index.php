@@ -37,6 +37,8 @@
                     <span class="subtitle">
                         <?php
                         require "twitteroauth/autoload.php";
+                        use Abraham\TwitterOAuth\TwitterOAuth;
+
                         function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
                             $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $oauth_token, $oauth_token_secret);
                             return $connection;
