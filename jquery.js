@@ -4,6 +4,13 @@ var center = new google.maps.LatLng(55.864237,-4.251806);
 // marker position
 var factory = new google.maps.LatLng(55.864237,-4.251806);
 
+$(document).ready(function(){
+    $(".signintwitter").click(function(){
+        $('#overlay').hide();
+        $('#mainMenu').hide();
+    });
+});
+
 function initialize() {
     var mapOptions = {
         center: center,
