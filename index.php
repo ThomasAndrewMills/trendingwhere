@@ -36,13 +36,15 @@
                 <br>
                     <span class="subtitle">
                         <?php
+                        function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
+                            $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $oauth_token, $oauth_token_secret);
+                            return $connection;
+                        }
 
-                        $connection = null;
-                        //one
-                        $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
+                        $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
+                        $content = $connection->
 
-                        //two
-                        $access_token = $connection->oauth("twitteroauth/access_token", ["oauth_verifier" => "nMznkpFRTMCuNMsmALzel9FgPlmWQDWg"]);
+                        get("statuses/home_timeline");
 
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
