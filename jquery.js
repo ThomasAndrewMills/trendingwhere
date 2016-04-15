@@ -208,8 +208,7 @@ function initialize() {
 
 
 
-        // Moves the shadow of the arrow 76px to the left margin.
-        iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 20px !important;'});
+
 
 
 
