@@ -9,14 +9,7 @@ function initialize() {
         center: center,
         zoom: 7,
         disableDefaultUI: true,
-        styles: [{
-            featureType: 'poi',
-            stylers: [{ visibility: 'off' }]  // Turn off points of interest.
-        }, {
-            featureType: 'transit.station',
-            stylers: [{ visibility: 'off' }]  // Turn off bus stations, train stations, etc.
-        }],
-        disableDoubleClickZoom: true
+        disableDoubleClickZoom: false
     };
 
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
