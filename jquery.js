@@ -22,26 +22,26 @@ function initialize() {
 
     // InfoWindow content
     var content =       '<div class="trendsMenuContainer">' +
-            '<div class="cityTitle">' +
-            'CITY NAME' +
-            '</div>' +
-            '<div class="trendsGroup">' +
-            '<div class="trend">Trend1</div>' +
-            '<div class="trend">Trend2</div>' +
-            '<div class="trend">Trend3</div>' +
-            '<div class="trend">Trend4</div>' +
-            '</div>'+
-            '<div class="trendsGroup">' +
-            '<div class="trend">Trend5</div>' +
-            '<div class="trend">Trend6</div>' +
-            '<div class="trend">Trend7</div>' +
-            '<div class="trend">Trend8</div>' +
-            '</div>'+
-            '<div class="trendsGroup">' +
-            '<div class="trend">Trend9</div>' +
-            '<div class="trend">Trend10</div>' +
-            '</div>' +
-            '</div>'
+                            '<div class="cityTitle">' +
+                                'CITY NAME' +
+                            '</div>' +
+                                '<div class="trendsGroup">' +
+                                '<div class="trend">Trend1</div>' +
+                                '<div class="trend">Trend2</div>' +
+                                '<div class="trend">Trend3</div>' +
+                                '<div class="trend">Trend4</div>' +
+                            '</div>'+
+                                '<div class="trendsGroup">' +
+                                '<div class="trend">Trend5</div>' +
+                                '<div class="trend">Trend6</div>' +
+                                '<div class="trend">Trend7</div>' +
+                                '<div class="trend">Trend8</div>' +
+                            '</div>'+
+                                '<div class="trendsGroup">' +
+                                '<div class="trend">Trend9</div>' +
+                                '<div class="trend">Trend10</div>' +
+                            '</div>' +
+                        '</div>'
         ;
 
     // A new Info Window is created and set content
@@ -206,8 +206,7 @@ function initialize() {
         // Removes white background DIV
         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
 
-        // Moves the infowindow 115px to the right.
-        iwOuter.parent().parent().css({left: '295px'});
+
 
         // Moves the shadow of the arrow 76px to the left margin.
         iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 20px !important;'});
