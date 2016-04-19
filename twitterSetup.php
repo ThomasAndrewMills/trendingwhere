@@ -14,7 +14,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
         // Abort! Something is wrong.
     }
 
-    $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
+    $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $request_token['oauth_token'], $request_token['oauth_token_secret']);
 
     $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => $_REQUEST['oauth_verifier']]);
 
@@ -25,5 +25,5 @@ use Abraham\TwitterOAuth\TwitterOAuth;
     $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
     $user = $connection->get("account/verify_credentials");
-echo("test");
+
 ?>
