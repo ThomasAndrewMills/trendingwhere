@@ -19,4 +19,5 @@ use Abraham\TwitterOAuth\TwitterOAuth;
     $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => $_REQUEST['oauth_verifier']]);
 
     $_SESSION['access_token'] = $access_token;
+echo("test");
 ?>
