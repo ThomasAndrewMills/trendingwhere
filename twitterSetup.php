@@ -26,9 +26,10 @@
 
     $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
-    $user = $connection->get('https://api.twitter.com/1.1/account/verify_credentials.json');
+    $user = $connection->get("account/verify_credentials");
 
-    print_r($user);
+    print_r($user)
+
 
 
 ?>
