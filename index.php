@@ -56,7 +56,7 @@
                         if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
                             // Abort! Something is wrong.
                         }
-                        echo("test");
+
                         $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
 
                         $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => $_REQUEST['oauth_verifier']]);
@@ -69,7 +69,7 @@
 
                         $user = $connection->get("account/verify_credentials");
 
-                        echo($user);
+
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
