@@ -1,17 +1,17 @@
 <?php
+    require 'twitteroauth/autoload.php';
+    use Abraham\TwitterOAuth\TwitterOAuth;
 
-require "twitteroauth/autoload.php";
-use Abraham\TwitterOAuth\TwitterOAuth;
-    define('CONSUMER_KEY', 'OAtCFNvjagzQCoHp5sJU2KtuE');
-    define('CONSUMER_SECRET','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
-    define('OAUTH_CALLBACK', 'http://trendingwhere.azurewebsites.net/twitterSetup.php');
+    define('CONSUMER_KEY', getenv('CONSUMER_KEY'));
+    define('CONSUMER_SECRET', getenv('CONSUMER_SECRET'));
+    define('OAUTH_CALLBACK', getenv('OAUTH_CALLBACK'));
 
     $request_token = [];
     $request_token['oauth_token'] = $_SESSION['oauth_token'];
     $request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret'];
 
     if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
-        echo($_REQUEST['oauth_token'] . "------------------------------" . "test");
+        // Abort! Something is wrong.
     }
 
     $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
