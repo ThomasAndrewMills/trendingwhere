@@ -15,6 +15,9 @@
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <script>
+
+
+
             $(document).ready(function(){
                 $(".signintwitter").click(function(){
                     <?php
@@ -27,6 +30,7 @@
                         $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'http://trendingwhere.azurewebsites.net/index.php'));
                         $_SESSION['oauth_token'] = $request_token['oauth_token'];
                         $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
+                        $_SESSION['loggedin'] = true;
                         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
                         ?>
                     $('#overlay').hide();
@@ -35,6 +39,20 @@
                 });
             });
         </script>
+
+
+
+        <script>
+            if(<?php$_SESSION['loggedin']?>){
+                $(document).ready(function(){
+                    $('#overlay').hide();
+                    $('#mainMenu').hide();
+                }
+            }
+        </script>
+
+
+
     </head>
     <body>
     <div id="overlay">
