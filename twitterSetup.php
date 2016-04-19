@@ -28,7 +28,9 @@
 
     $user = $connection->get("account/verify_credentials");
 
-    print_r($user)
+    $json_output = json_decode($user, true);
+
+
 
 
 
