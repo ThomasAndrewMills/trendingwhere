@@ -44,7 +44,6 @@
 
         <script>
             if(<?php$_SESSION['loggedin']?>){
-                $(document).ready(function(){
                     $('#overlay').hide();
                 }
             }
