@@ -30,6 +30,8 @@
 
     $json_output = json_decode($user, true);
 
+    echo($json_output);
+
 
 
 
