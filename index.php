@@ -53,8 +53,6 @@
 
                         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
 
-                        echo($url);
-
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
@@ -68,7 +66,7 @@
                             <li>The top 10 trending topics for that city will be displayed.</li>
                             <li>Get started by signing in to twitter with the button below!</li>
                         </ul>
-                        <img src="signInTwitter.png" class="signInTwitter">
+                        <a href="<?php echo($url);?>"><img src="signInTwitter.png" class="signInTwitter"></a>
                     </span>
             </div>
         </div>
