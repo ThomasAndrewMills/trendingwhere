@@ -25,5 +25,5 @@ use Abraham\TwitterOAuth\TwitterOAuth;
     $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
     $user = $connection->get("account/verify_credentials");
-
+    echo("test");
 ?>
