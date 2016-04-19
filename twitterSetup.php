@@ -28,5 +28,7 @@
 
     $user = $connection->get('https://api.twitter.com/1.1/account/verify_credentials.json');
 
+    print_r($user);
+
 
 ?>
