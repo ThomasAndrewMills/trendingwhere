@@ -11,7 +11,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
     $request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret'];
 
     if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
-        echo($_REQUEST['oauth_token'] . "------------------------------" . $request_token['oauth_token_secret']);
+        echo($_REQUEST['oauth_token'] . "------------------------------" . "test");
     }
 
     $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
