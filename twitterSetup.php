@@ -10,6 +10,8 @@
     $request_token['oauth_token'] = $_SESSION['oauth_token'];
     $request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret'];
 
+    echo($_SESSION['oauth_token']);
+
     if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
         // Abort! Something is wrong.
     }
