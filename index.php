@@ -45,7 +45,7 @@
                         $_SESSION['oauth_token'] = $request_token['oauth_token'];
                         $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
                         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
-                        echo("");
+                        echo($_SESSION['oauth_token']);
                         ?>
 
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
