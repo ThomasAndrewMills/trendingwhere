@@ -1,6 +1,7 @@
 <?php
     require 'twitteroauth/autoload.php';
     use Abraham\TwitterOAuth\TwitterOAuth;
+    session_start();
 
     define('CONSUMER_KEY', getenv('CONSUMER_KEY'));
     define('CONSUMER_SECRET', getenv('CONSUMER_SECRET'));
@@ -11,10 +12,6 @@
     $request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret'];
 
 
-    session_start();
-    echo "PHP List All Session Variables";
-    foreach ($_SESSION as $key=>$val)
-        echo $key." ".$val."<br/>";
 
     if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
         echo("Abort! Something is wrong.");

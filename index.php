@@ -38,6 +38,7 @@
                         <?php
                         require "twitteroauth/autoload.php";
                         use Abraham\TwitterOAuth\TwitterOAuth;
+                        session_start();
 
                         //setup
                         $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
