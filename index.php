@@ -43,7 +43,7 @@
 
 
         <script>
-            if(<?php$_SESSION['loggedin']?>){
+            <?php if($_SESSION['loggedin']){?>
                     $('#overlay').hide();
                 }
             }
