@@ -40,15 +40,20 @@
                         require "twitteroauth/autoload.php";
                         use Abraham\TwitterOAuth\TwitterOAuth;
 
-                        function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
-                            $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $oauth_token, $oauth_token_secret);
-                            return $connection;
-                        }
+                        define('CONSUMER_KEY', getenv('CONSUMER_KEY'));
+                        define('CONSUMER_SECRET', getenv('CONSUMER_SECRET'));
+                        define('OAUTH_CALLBACK', getenv('OAUTH_CALLBACK'));
 
-                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ','455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI', 'lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL');
-                        $content = $connection->get("account/verify_credentials");
+                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
 
+                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => OAUTH_CALLBACK));
 
+                        $_SESSION['oauth_token'] = $request_token['oauth_token'];
+                        $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
+
+                        $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
+
+                        echo($url);
 
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
