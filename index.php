@@ -64,11 +64,11 @@
                         $_SESSION['access_token'] = $access_token;
 
                         $access_token = $_SESSION['access_token'];
-
+                        echo("test");
                         $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
                         $user = $connection->get("account/verify_credentials");
-echo("test");
+
 
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
