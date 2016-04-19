@@ -28,5 +28,5 @@
 
     $user = $connection->get("account/verify_credentials");
 
-    echo($user);
+    print_r($user);
 ?>
