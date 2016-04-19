@@ -36,23 +36,40 @@
                 <br>
                     <span class="subtitle">
                         <?php
-
                         require "twitteroauth/autoload.php";
                         use Abraham\TwitterOAuth\TwitterOAuth;
+
+                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
+                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'http://www.trendingwhere.azurewebsites.net/'));
+                        $_SESSION['oauth_token'] = $request_token['oauth_token'];
+                        $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
+                        $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
 
                         define('CONSUMER_KEY', getenv('CONSUMER_KEY'));
                         define('CONSUMER_SECRET', getenv('CONSUMER_SECRET'));
                         define('OAUTH_CALLBACK', getenv('OAUTH_CALLBACK'));
 
-                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
+                        $request_token = [];
+                        $request_token['oauth_token'] = $_SESSION['oauth_token'];
+                        $request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret'];
 
-                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => OAUTH_CALLBACK));
+                        if (isset($_REQUEST['oauth_token']) && $request_token['oauth_token'] !== $_REQUEST['oauth_token']) {
+                            // Abort! Something is wrong.
+                        }
 
-                        $_SESSION['oauth_token'] = $request_token['oauth_token'];
-                        $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
+                        $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
 
-                        $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
+                        $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => $_REQUEST['oauth_verifier']]);
 
+                        $_SESSION['access_token'] = $access_token;
+
+                        $access_token = $_SESSION['access_token'];
+
+                        $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
+
+                        $user = $connection->get("account/verify_credentials");
+
+                        echo($user);
                         ?>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
