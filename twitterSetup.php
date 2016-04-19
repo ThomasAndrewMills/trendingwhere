@@ -1,4 +1,5 @@
 <?php
+echo("test");
 require "twitteroauth/autoload.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
     define('CONSUMER_KEY', getenv('CONSUMER_KEY'));
@@ -14,7 +15,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
     }
 
     $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
-echo("test");
+
     $access_token = $connection->oauth("oauth/access_token", ["oauth_verifier" => $_REQUEST['oauth_verifier']]);
 
     $_SESSION['access_token'] = $access_token;
