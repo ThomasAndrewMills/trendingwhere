@@ -21,7 +21,7 @@ function initialize() {
 
     //pop up trends menu
     var content =       '<div class="trendsMenuContainer">' +
-                            '<div class="cityTitle"><script> $(document).ready(function(){ $("#cityTitle").html(title) });</script> </div>' +
+                            '<div id="cityTitle"><script> $(document).ready(function(){ $("#cityTitle").load(function(){$("#cityTitle").html(title);});});</script> </div>' +
                                 '<div class="trendsGroup">' +
                                 '<div class="trend">Trend1</div>' +
                                 '<div class="trend">Trend2</div>' +
