@@ -5,7 +5,7 @@ var center = new google.maps.LatLng(55.864237,-4.251806);
 function initialize() {
     var mapOptions = {
         center: center,
-        zoom: 5,
+        zoom: 7,
         disableDefaultUI: true,
         styles: [{
             featureType: 'poi',
