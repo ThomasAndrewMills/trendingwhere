@@ -21,7 +21,7 @@ function initialize() {
 
     //pop up trends menu
     var content =       '<div class="trendsMenuContainer">' +
-                            '<div id="cityTitle"><script>document.write(marker1[title])</script></div>' +
+                            '<div id="cityTitle">City Name</div>' +
                                 '<div class="trendsGroup">' +
                                 '<div class="trend">Trend1</div>' +
                                 '<div class="trend">Trend2</div>' +
