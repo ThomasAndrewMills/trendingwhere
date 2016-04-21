@@ -57,7 +57,7 @@
                         <ul>
                             <li>Pan across the map by clicking and dragging your mouse.</li>
                             <li>Select your chosen city by clicking on the marker.</li>
-                            <li>The top 10 trending topics for that city will be displayed.</li>
+                            <li>The top 12 trending topics for that city will be displayed.</li>
                             <li>Get started by signing in to twitter with the button below!</li>
                         </ul>
                         <a href="<?php echo($url);?>"><img src="signInTwitter.png" class="signInTwitter"></a>
