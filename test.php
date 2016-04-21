@@ -32,22 +32,6 @@
     <div id="menuItem1">
         <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
         <br>
-                   <!-- <span class="subtitle">
-                        <//?php
-                        require "twitteroauth/autoload.php";
-                        use Abraham\TwitterOAuth\TwitterOAuth;
-                        session_start();
-
-                        //setup
-                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
-                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'http://trendingwhere.azurewebsites.net/twitterSetup.php'));
-                        $_SESSION['oauth_token'] = $request_token['oauth_token'];
-                        $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
-                        $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
-                        ?>
-
-                        Sign in using your twitter account and explore the trending topics<br> of cities around the world!
-                    </span>-->
         <br>
         <br>
         <img src="trendingWhereInterface.png" class="trendingWhereInterface">
