@@ -21,9 +21,7 @@ function initialize() {
 
     //pop up trends menu
     var content =       '<div class="trendsMenuContainer">' +
-                            '<div class="cityTitle">' +
-                                'CITY NAME' +
-                            '</div>' +
+                            '<div class="cityTitle"><script> </script> </div>' +
                                 '<div class="trendsGroup">' +
                                 '<div class="trend">Trend1</div>' +
                                 '<div class="trend">Trend2</div>' +
@@ -39,8 +37,6 @@ function initialize() {
                                 '<div class="trendsGroup">' +
                                 '<div class="trend">Trend9</div>' +
                                 '<div class="trend">Trend10</div>' +
-                                '<div class="trend">Trend11</div>' +
-                                '<div class="trend">Trend12</div>' +
                             '</div>' +
                         '</div>';
 
