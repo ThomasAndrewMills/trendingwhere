@@ -22,8 +22,7 @@ function initialize() {
     //pop up trends menu
     var content =       '<div id="trendsMenuContainer">' +
                             '<div id="cityTitle"> ' +
-                                    '<script> var element = document.getElementById("trendsMenuContainer")'+
-                                        element.write(title) +
+                                    '<script> var element = document.getElementById("trendsMenuContainer"); element.write(title)' +
                                    '</script>' +
                                 '</div>' +
                                 '<div class="trendsGroup">' +
