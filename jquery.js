@@ -20,11 +20,10 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
     //pop up trends menu
-    var content =       '<div id="trendsMenuContainer">' +
-                            '<div id="cityTitle"> ' +
-                                    '<script> var element = document.getElementById("trendsMenuContainer"); element.write(title)' +
-                                   '</script>' +
-                                '</div>' +
+    var content =       '<div class="trendsMenuContainer">' +
+                            '<div class="cityTitle">' +
+                                'CITY NAME' +
+                            '</div>' +
                                 '<div class="trendsGroup">' +
                                 '<div class="trend">Trend1</div>' +
                                 '<div class="trend">Trend2</div>' +
