@@ -25,7 +25,7 @@ function initialize() {
                                 'CITY NAME' +
                             '</div>' +
                                 '<div class="trendsGroup">' +
-                                '<div class="trend">Trend1</div>' +
+                                '<div class="trend"><script> </script></div>' +
                                 '<div class="trend">Trend2</div>' +
                                 '<div class="trend">Trend3</div>' +
                                 '<div class="trend">Trend4</div>' +
@@ -66,7 +66,8 @@ function initialize() {
     var marker1 = new google.maps.Marker({
         position: city1,
         map: map,
-        title:"Glasgow"
+        title:"Glasgow",
+        woeid:1
     });
 
     // marker options
