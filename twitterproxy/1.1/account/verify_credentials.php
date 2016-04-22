@@ -3,6 +3,9 @@
  * account/verify_credentials
  * https://dev.twitter.com/docs/api/1.1/get/account/verify_credentials
  */
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
  
 require '../../twitter-proxy.php';
 
