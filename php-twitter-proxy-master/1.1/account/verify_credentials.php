@@ -7,3 +7,11 @@
 require '../../twitter-proxy.php';
 
 Proxy::relay( 'account/verify_credentials' );
+?>
+<html>
+<head>
+</head>
+<body>
+<p>Tested</p>
+</body>
+</html>
