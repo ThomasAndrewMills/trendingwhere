@@ -21,6 +21,7 @@
                 $('mapLogo').show();
         });
     </script>
+
 </head>
 <body>
 <div id="overlay">
