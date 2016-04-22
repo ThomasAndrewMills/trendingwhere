@@ -8,6 +8,6 @@ session_start();
  
 require '../../twitter-proxy.php';
 
-Proxy::relay( '1.1/account/verify_credentials.php' );
+Proxy::relay('account/verify_credentials.php' );
 
 ?>
