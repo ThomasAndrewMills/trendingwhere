@@ -6,13 +6,14 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
- 
+echo"here";
 require '../../twitter-proxy.php';
 
 Proxy::relay( 'account/verify_credentials' );
 
 $token=$_GET["oauth_token"];
 $verifier=$_GET["oauth_verifier"];
+
 
 ?>
 
