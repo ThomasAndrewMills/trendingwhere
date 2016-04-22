@@ -1,10 +1,3 @@
-<html>
-<head>
-</head>
-<body>
-<p>Tested</p>
-</body>
-</html>
 <?php
 /**
  * account/verify_credentials
@@ -15,10 +8,3 @@ require '../../twitter-proxy.php';
 
 Proxy::relay( 'account/verify_credentials' );
 ?>
-<html>
-<head>
-</head>
-<body>
-<p>Tested</p>
-</body>
-</html>
