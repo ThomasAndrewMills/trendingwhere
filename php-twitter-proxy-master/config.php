@@ -16,12 +16,12 @@ Proxy::match_methods('GET,POST' );
 
 // Restrict permitted HTTP Referrers.
 // This is simply designed to prevent others using your proxy from JavaScript. The referrer is easily forged via other means.
-Proxy::match_referrer('!^https?://(?:localhost|mydomain\.com)/!');
+Proxy::match_referrer('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net)/!');
 
 
 // Restrict permitted HTTP Origin headers.
 // Similar to above, but specifically for Ajax requests.
-Proxy::match_origin('!^https?://(?:localhost|mydomain\.com)!');
+Proxy::match_origin('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net)!');
 
 
 // Restrict permitted remote IP addresses
@@ -44,7 +44,7 @@ Proxy::init_client( 'OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BV
 // See: https://dev.twitter.com/docs/auth/obtaining-access-tokens
 // Obtaining an access token is beyond the scope of this library.
 // You could pull them from a database, or send the user through an OAuth flow, or just hard code them.
-Proxy::auth_client($_SESSION['access_token'], 'Your access token secret' );
+Proxy::auth_client('455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI', 'lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL' );
 
 
 // Lock screen_name and user_id parameters in some API calls.

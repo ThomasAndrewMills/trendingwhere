@@ -24,7 +24,7 @@
 
     $access_token = $_SESSION['access_token'];
 
-    echo("Access token" . $access_token . "Access token secret" . $access_token['oauth_token_secret']);
+    echo("Access token" . "Access token secret" . $access_token['oauth_token_secret']);
 
     $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
