@@ -1,4 +1,4 @@
-trgjtriojhgdht
+
 <?php
 /**
  * account/verify_credentials
@@ -6,7 +6,8 @@ trgjtriojhgdht
  */
  
 require '../../twitter-proxy.php';
-echo("Test");
+
 Proxy::relay( 'account/verify_credentials' );
 
-
+?>
+trgjtriojhgdht
