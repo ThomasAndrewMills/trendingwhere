@@ -566,7 +566,7 @@ abstract class Proxy {
 
 
 
-require __DIR__ . '/lib/twitter-client.php';
+require __DIR__.'/lib/twitter-client.php';
 require __DIR__.'/config.php';
 
 
