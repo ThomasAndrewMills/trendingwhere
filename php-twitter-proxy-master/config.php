@@ -37,7 +37,7 @@ Proxy::match_remote_addr('/^(127/.0/.0/.1|192/.168/.0/.\d+)$/');
 
 // Twitter application key and secret
 // See: https://dev.twitter.com/apps 
-Proxy::init_client( 'Your application consumer token', 'Your consumer token secret' );
+Proxy::init_client( 'OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ' );
 
 
 // Authenticated user access token.
