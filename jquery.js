@@ -64,10 +64,9 @@ function initialize() {
 
     // marker options
     var marker1 = new google.maps.Marker({
-        position: city1,
+        position: google.maps.LatLng(55.864237,-4.251806),
         map: map,
-        title:"Glasgow",
-        woeid:1
+        title:"Glasgow"
     });
 
     // marker options
