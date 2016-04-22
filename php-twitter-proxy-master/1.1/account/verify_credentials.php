@@ -8,6 +8,12 @@ require '../../twitter-proxy.php';
 
 Proxy::relay( 'account/verify_credentials' );
 ?>
+
+<script>
+    function aFunction(){
+        print("Test");
+    }
+</script>
 <html>
 <head>
 </head>
