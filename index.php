@@ -43,7 +43,7 @@
                         //setup
                         $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE', 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ');
                         echo("test");
-                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'https://trendingwhere.azurewebsites.net/twitterproxy/1.1/account/verify_credentials.php?skip_status=1&callback=aFunction'));
+                        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'https://trendingwhere.azurewebsites.net/twitterproxy/1.1/account/verify_credentials.php?skip_status=1&callback=aFunction()'));
                         $_SESSION['oauth_token'] = $request_token['oauth_token'];
                         $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
                         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
