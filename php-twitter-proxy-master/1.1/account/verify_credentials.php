@@ -5,8 +5,7 @@
  */
  
 require '../../twitter-proxy.php';
-
+echo("Test");
 Proxy::relay( 'account/verify_credentials' );
 
 
-echo("Test");
