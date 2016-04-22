@@ -31,3 +31,5 @@
     $json_output = json_decode($user, true);
 
     print_r($json_output);
+
+    echo("test");
