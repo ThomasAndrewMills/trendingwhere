@@ -1,4 +1,4 @@
-
+session_start();
 <?php
 /**
  * account/verify_credentials
