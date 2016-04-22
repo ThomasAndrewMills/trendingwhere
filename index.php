@@ -19,7 +19,7 @@
                 $(".signintwitter").click(function(){
                     $('#overlay').hide();
                     $('#mainMenu').hide();
-                    $('mapLogo').show();
+
                 });
             });
         </script>
