@@ -11,8 +11,8 @@ require '../../twitter-proxy.php';
 
 Proxy::relay( 'account/verify_credentials' );
 
-$token=$_GET["oauth_token"];
-$verifier=$_GET["oauth_verifier"];
+//$token=$_GET["oauth_token"];
+//$verifier=$_GET["oauth_verifier"];
 
 
 ?>

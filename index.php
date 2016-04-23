@@ -47,7 +47,7 @@
                             <li>The top 10 trending topics for that city will be displayed.</li>
                             <li>Get started by signing in to twitter with the button below!</li>
                         </ul>
-                        <a href="/twitterproxy/1.1/account/verify_credentials.php?skip_status=3&callback=jsfunc"><img src="signInTwitter.png" class="signInTwitter"></a>
+                        <a href="/twitterproxy/1.1/account/verify_credentials.php?skip_status=1&callback=jsfunc"><img src="signInTwitter.png" class="signInTwitter"></a>
                     </span>
             </div>
         </div>

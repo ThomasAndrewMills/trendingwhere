@@ -49,9 +49,9 @@ Proxy::auth_client('455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI', 'lIrlNx
 
 // Lock screen_name and user_id parameters in some API calls.
 // This prevents other people using some endpoints for their own Twitter feeds
-Proxy::lock_users( array( 'Thomas Mills' => '@ThomasMills_' ) );
+Proxy::lock_users( array( '455303569' => 'ThomasMills_' ) );
 
 
 // caching engine - currently only APC supported and is enabled by default
-Proxy::enable_cache( 'apc', 'your_prefix' );
-// Proxy::disable_cache();
+//Proxy::enable_cache( 'apc', 'your_prefix' );
+Proxy::disable_cache();
