@@ -528,9 +528,9 @@ abstract class Proxy {
      * Abstraction of cache fetch
      * @internal
      */
-    private static function cache_fetch( $key ){
-        return apc_fetch( $key );
-    }    
+//    private static function cache_fetch( $key ){
+//        return apc_fetch( $key );
+//    }
     
     
     
