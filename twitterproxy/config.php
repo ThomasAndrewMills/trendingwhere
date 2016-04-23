@@ -26,7 +26,7 @@ Proxy::match_origin('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net)!
 
 // Restrict permitted remote IP addresses
 // This is pointless if using with JavaScript.
-Proxy::match_remote_addr('/^(127/.0/.0/.1|192/.168/.0/.\d+)$/');
+//Proxy::match_remote_addr('/^(127/.0/.0/.1|192/.168/.0/.\d+)$/');
 
 
 
