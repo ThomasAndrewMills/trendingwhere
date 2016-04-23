@@ -21,7 +21,7 @@ Proxy::match_referrer('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net
 
 // Restrict permitted HTTP Origin headers.
 // Similar to above, but specifically for Ajax requests.
-Proxy::match_origin('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net)!');
+//Proxy::match_origin('!^https?://(?:localhost|trendingwhere\.azurewebsites\.net)!');
 
 
 // Restrict permitted remote IP addresses
