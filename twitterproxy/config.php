@@ -36,4 +36,4 @@ Proxy::lock_users( array( '455303569' => 'ThomasMills_' ) );
 
 // caching engine - currently only APC supported and is enabled by default
 //Proxy::enable_cache( 'apc', 'your_prefix' );
-// Proxy::disable_cache();
+ Proxy::disable_cache();
