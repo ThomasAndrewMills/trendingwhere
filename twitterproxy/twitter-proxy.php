@@ -286,6 +286,7 @@ abstract class Proxy {
      * @param string regexp pattern to match against HTTP Origin header
      */
     public static function match_origin( $pattern ){
+        echo($pattern);
         if( empty($_SERVER['HTTP_ORIGIN']) ){
             self::fatal( 400 , 'Empty origin' );
         }
