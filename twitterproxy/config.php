@@ -9,6 +9,24 @@
 // Failures result in immediate HTTP error response.
 
 
+// Restrict permitted HTTP methods.
+// It's recommended to remove POST support if your proxy is public.
+Proxy::match_methods('GET,POST' );
+
+
+// Restrict permitted HTTP Referrers.
+// This is simply designed to prevent others using your proxy from JavaScript. The referrer is easily forged via other means.
+Proxy::match_referrer('https://www.trendingwhere.azurewebsites.net');
+
+
+// Restrict permitted HTTP Origin headers.
+// Similar to above, but specifically for Ajax requests.
+Proxy::match_origin('https://www.trendingwhere.azurewebsites.net');
+
+
+// Restrict permitted remote IP addresses
+// This is pointless if using with JavaScript.
+//Proxy::match_remote_addr('/^(127/.0/.0/.1|192/.168/.0/.\d+)$/');
 
 
 
@@ -35,5 +53,5 @@ Proxy::lock_users( array( '455303569' => 'ThomasMills_' ) );
 
 
 // caching engine - currently only APC supported and is enabled by default
-Proxy::enable_cache( 'apc', 'your_prefix' );
-//Proxy::disable_cache();
+//Proxy::enable_cache( 'apc', 'your_prefix' );
+Proxy::disable_cache();
