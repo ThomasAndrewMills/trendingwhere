@@ -11,7 +11,7 @@
 
 // Restrict permitted HTTP methods.
 // It's recommended to remove POST support if your proxy is public.
-//Proxy::match_methods('GET,POST' );
+Proxy::match_methods('GET,POST' );
 
 
 // Restrict permitted HTTP Referrers.
