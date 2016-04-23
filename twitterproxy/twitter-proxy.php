@@ -287,7 +287,7 @@ abstract class Proxy {
      */
     public static function match_origin( $pattern ){
         echo("test");
-        echo($_SERVER['HTTP_ORIGIN']);
+        echo($_SERVER['HTTPS_ORIGIN']);
         if( empty($_SERVER['HTTP_ORIGIN']) ){
             self::fatal( 400 , 'Empty origin' );
         }
