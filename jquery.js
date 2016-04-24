@@ -160,7 +160,7 @@ function initialize() {
 
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '">' + '<b>' + obj.responseJSON[0].trends[0].name + '</b>' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + '</a>' + " tweets" : "");
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '">' + '<b>' + obj.responseJSON[0].trends[0].name + '</b></a>' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" : "");
             trend[1].innerHTML= '<b>' + obj.responseJSON[0].trends[1].name + '</b>' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" : "");
             trend[2].innerHTML= '<b>' + obj.responseJSON[0].trends[2].name + '</b>' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" : "");
             trend[3].innerHTML= '<b>' + obj.responseJSON[0].trends[3].name + '</b>' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" : "");
