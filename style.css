@@ -122,7 +122,8 @@ html, body {
 
 .trendsMenuContainer{
     padding:10px;
-    width:520px;
+    width:540px;
+    height:450px;
 }
 
 #overlay2{
