@@ -172,6 +172,9 @@ function initialize() {
             trend[9].innerHTML= '<b>' + obj.responseJSON[0].trends[9].name + '</b>' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" : "");
             trend[10].innerHTML= '<b>' + obj.responseJSON[0].trends[10].name + '</b>' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" : "");
             trend[11].innerHTML= '<b>' + obj.responseJSON[0].trends[11].name + '</b>' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" : "");
+            
+            //adding link to twitter search
+            $(trend[0]).attr('href', obj.responseJSON[0].trends[0].url);
         });
         infowindow.open(map, marker1);
     });
