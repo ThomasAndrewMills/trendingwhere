@@ -125,7 +125,7 @@ html, body {
     padding:10px;
     width:540px;
     height:160px;
-    overflow:scroll;
+    overflow:hidden;
 }
 
 #overlay2{
