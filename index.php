@@ -21,6 +21,9 @@
         </div>
         <div id="map-canvas">
         </div>
+        <div id="overlay2">
+            
+        </div>
         <div id="mainMenu">
             <div id="menuItem1">
                 <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
@@ -30,8 +33,9 @@
 
                         $(document).ready(function () {
                             $(".signintwitter").click(function () {
-                            $('#overlay').hide();
-                            $('#mainMenu').hide();
+                                $('#overlay').hide();
+                                $('#mainMenu').hide();
+                                $('#overlay2').show();
                             });
                         });
                         </script>
