@@ -26,22 +26,22 @@ function initialize() {
         '' +
         '</div>' +
         '<div class="trendsGroup">' +
-        '<a><div class="trend"></div></a>' +
-        '<a></a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
         '</div>'+
         '<div class="trendsGroup">' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
         '</div>'+
         '<div class="trendsGroup">' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
-        '<a><div class="trend"></div></a>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
+        '<div class="trend"></div>' +
         '</div>' +
         '</div>';
 
