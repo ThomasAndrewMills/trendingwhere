@@ -130,9 +130,7 @@ html, body {
     height:50px;
     z-index: 3;
     text-align: center;
-    -moz-box-shadow:inset 0px 30px 11px #000000;
-    -webkit-box-shadow:inset 0px 30px 11px #000000;
-    box-shadow:inset 0px 30px 11px #000000;
+
 }
 
 .smallTitle{
