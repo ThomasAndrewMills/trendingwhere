@@ -148,6 +148,11 @@ a:link {
     color:darkblue;
 }
 
+a:hover {
+    text-decoration: underline;
+    color:red;
+}
+
 /********************************************************/
 
 #map-canvas {
