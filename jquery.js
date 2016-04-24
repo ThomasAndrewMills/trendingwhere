@@ -381,7 +381,7 @@ function initialize() {
     });
 
     google.maps.event.addListener(marker11, 'click', function() {
-        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=28743736'), function (result) {
+        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=2442047'), function (result) {
             //adding the city title to the pop-up menu
             var cityTitle = document.getElementsByClassName('cityTitle');
             cityTitle[0].innerHTML = obj.responseJSON[0].locations[0].name;
