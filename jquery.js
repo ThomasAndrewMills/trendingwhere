@@ -66,8 +66,8 @@ function initialize() {
     //manchester    28218
     var city6 = new google.maps.LatLng(53.480759,-2.242631);
 
-    //Ottawa 	91982014
-    var city7 = new google.maps.LatLng(45.42153,-75.697193);
+    //Madrid 	766273
+    var city7 = new google.maps.LatLng(40.416775,-3.70379);
 
     //paris 615702
     var city8 = new google.maps.LatLng(48.856614,2.352222);
@@ -116,7 +116,7 @@ function initialize() {
     var marker7 = new google.maps.Marker({
         position: city7,
         map: map,
-        title:"Ottawa"
+        title:"Madrid"
     });
 
     var marker8 = new google.maps.Marker({
@@ -277,7 +277,7 @@ function initialize() {
     });
 
     google.maps.event.addListener(marker7, 'click', function() {
-        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=91982014'), function (result) {
+        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=766273'), function (result) {
             //adding the city title to the pop-up menu
             var cityTitle = document.getElementsByClassName('cityTitle');
             cityTitle[0].innerHTML = obj.responseJSON[0].locations[0].name;
