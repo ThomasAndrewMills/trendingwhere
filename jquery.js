@@ -174,7 +174,7 @@ function initialize() {
             trend[11].innerHTML= '<b>' + obj.responseJSON[0].trends[11].name + '</b>' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" : "");
             
             //adding link to twitter search
-            $(trend[0]).document.getElementById("Z").attr('href', obj.responseJSON[0].trends[0].url);
+            $('.trend').attr('href', obj.responseJSON[0].trends[0].url);
         });
         infowindow.open(map, marker1);
     });
