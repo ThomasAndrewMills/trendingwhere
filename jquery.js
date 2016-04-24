@@ -157,8 +157,7 @@ function initialize() {
             //getting tweet volume for each trend
             //also making sure the value if not null
             //for some reason twitter gives back null values for tweet_volume
-
-
+            
             //taking the data received in JSON and adding the trends to the pop-up menu
             trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '">' + '<b>' + obj.responseJSON[0].trends[0].name + '</b></a>' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" : "");
             trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '">' + '<b>' + obj.responseJSON[0].trends[1].name + '</b></a>' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" : "");
