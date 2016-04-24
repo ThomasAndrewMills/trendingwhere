@@ -20,7 +20,7 @@
 
         </div>
         <div id="overlay2">
-            this is a test
+            <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
         </div>
         <div id="map-canvas">
         </div>
