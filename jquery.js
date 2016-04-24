@@ -155,7 +155,7 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+            trend[0].innerHTML= obj.responseJSON[0].trends[0].name + obj.responseJSON[0].trends[0].tweet_volume;
             trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
             trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
             trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
@@ -412,19 +412,12 @@ function initialize() {
     });
 
     google.maps.event.addListener(infowindow, 'domready', function() {
-
         var iwOuter = $('.gm-style-iw');
-
         var iwBackground = iwOuter.prev();
-
         iwBackground.children(':nth-child(2)').css({'display' : 'none'});
-
         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
-
         iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
-
         var iwCloseBtn = iwOuter.next();
-
         iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
     });
 }
