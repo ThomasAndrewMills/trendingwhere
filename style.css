@@ -130,9 +130,12 @@ html, body {
     height:200px;
     background: rgba(0, 0, 0, 0.6);
     z-index: 3;
+    text-align: center;
+}
+
+.smallTitle{
     font-family: 'Oleo Script';
     font-size:25pt;
-    text-align: center;
 }
 
 /********************************************************/
