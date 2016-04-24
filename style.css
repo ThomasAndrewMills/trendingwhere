@@ -153,6 +153,10 @@ a:hover {
     color:red;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 /********************************************************/
 
 #map-canvas {
