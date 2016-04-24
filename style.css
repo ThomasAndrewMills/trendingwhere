@@ -143,6 +143,11 @@ html, body {
 
 }
 
+a:link {
+    text-decoration: none;
+    color:darkblue;
+}
+
 /********************************************************/
 
 #map-canvas {
