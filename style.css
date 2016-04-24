@@ -130,10 +130,10 @@ html, body {
     height:50px;
     z-index: 3;
     text-align: center;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 19%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 19%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 19%,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 20%, rgba(0,0,0,0.75) 54%, rgba(0,0,0,0) 91%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 20%,rgba(0,0,0,0.75) 54%,rgba(0,0,0,0) 91%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.75) 20%,rgba(0,0,0,0.75) 54%,rgba(0,0,0,0) 91%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
 }
 
 .smallTitle{
