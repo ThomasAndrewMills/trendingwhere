@@ -130,7 +130,14 @@ html, body {
     height:50px;
     z-index: 3;
     text-align: center;
-
+    background: rgba(0,0,0,0.85);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.85) 52%, rgba(7,7,7,0.85) 64%, rgba(20,20,20,0.33) 86%, rgba(20,20,20,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(52%, rgba(0,0,0,0.85)), color-stop(64%, rgba(7,7,7,0.85)), color-stop(86%, rgba(20,20,20,0.33)), color-stop(100%, rgba(20,20,20,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.85) 52%, rgba(7,7,7,0.85) 64%, rgba(20,20,20,0.33) 86%, rgba(20,20,20,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.85) 52%, rgba(7,7,7,0.85) 64%, rgba(20,20,20,0.33) 86%, rgba(20,20,20,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.85) 52%, rgba(7,7,7,0.85) 64%, rgba(20,20,20,0.33) 86%, rgba(20,20,20,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.85) 52%, rgba(7,7,7,0.85) 64%, rgba(20,20,20,0.33) 86%, rgba(20,20,20,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#141414', GradientType=0 );
 }
 
 .smallTitle{
