@@ -130,6 +130,7 @@ html, body {
     height:50px;
     z-index: 3;
     text-align: left;
+    padding:15px
     /*background: rgba(0,0,0,0.62);*/
     /*background: -moz-linear-gradient(top, rgba(0,0,0,0.62) 60%, rgba(7,7,7,0.62) 69%, rgba(20,20,20,0.28) 86%, rgba(20,20,20,0) 100%);*/
     /*background: -webkit-gradient(left top, left bottom, color-stop(60%, rgba(0,0,0,0.62)), color-stop(69%, rgba(7,7,7,0.62)), color-stop(86%, rgba(20,20,20,0.28)), color-stop(100%, rgba(20,20,20,0)));*/
