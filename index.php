@@ -22,7 +22,7 @@
         <div id="map-canvas">
         </div>
         <div id="overlay2">
-            
+            this is a test
         </div>
         <div id="mainMenu">
             <div id="menuItem1">
