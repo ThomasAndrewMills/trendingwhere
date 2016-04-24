@@ -155,7 +155,7 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= obj.responseJSON[0].trends[0].name + '<br>' + obj.responseJSON[0].trends[0].tweet_volume + " tweets";
+            trend[0].innerHTML= '<b>' + obj.responseJSON[0].trends[0].name + '</b>' + '<br>' + obj.responseJSON[0].trends[0].tweet_volume + " tweets";
             trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
             trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
             trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
