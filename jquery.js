@@ -160,7 +160,7 @@ function initialize() {
 
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= '<a>' + '<b>' + obj.responseJSON[0].trends[0].name + '</b>' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + '</a>' + " tweets" : "");
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '">' + '<b>' + obj.responseJSON[0].trends[0].name + '</b>' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + '</a>' + " tweets" : "");
             trend[1].innerHTML= '<b>' + obj.responseJSON[0].trends[1].name + '</b>' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" : "");
             trend[2].innerHTML= '<b>' + obj.responseJSON[0].trends[2].name + '</b>' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" : "");
             trend[3].innerHTML= '<b>' + obj.responseJSON[0].trends[3].name + '</b>' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" : "");
@@ -172,11 +172,6 @@ function initialize() {
             trend[9].innerHTML= '<b>' + obj.responseJSON[0].trends[9].name + '</b>' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" : "");
             trend[10].innerHTML= '<b>' + obj.responseJSON[0].trends[10].name + '</b>' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" : "");
             trend[11].innerHTML= '<b>' + obj.responseJSON[0].trends[11].name + '</b>' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" : "");
-
-            //selecting all the anchor tags
-            var anchors = document.getElementsByTagName("a");
-            //adding link to twitter search
-            anchors[0].attr('href', obj.responseJSON[0].trends[0].url);
         });
         infowindow.open(map, marker1);
     });
