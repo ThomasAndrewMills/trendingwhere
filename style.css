@@ -187,9 +187,10 @@ a:visited:hover {
     padding:10px;
     text-align: left;
     vertical-align:bottom;
+    display:none;
 }
 
-.smallTitle:hover + #infoContainer {
+.smallTitle:hover + #info{
     display: block;
 }
 
@@ -201,7 +202,6 @@ a:visited:hover {
     right: 0;
     vertical-align:bottom;
     bottom:20px;
-    display:none;
 }
 
 .smallTitle:hover{
