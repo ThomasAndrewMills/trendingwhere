@@ -145,7 +145,7 @@ html, body {
     padding:20px;
     padding-top:40px;
 
-    bottom:0px;
+
 
 }
 
@@ -203,6 +203,7 @@ a:visited:hover {
     width:340px;
     right: 0;
     vertical-align:bottom;
+    bottom:0px;
 }
 /********************************************************/
 
