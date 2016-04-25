@@ -166,6 +166,11 @@ a:visited {
     color:black;
 }
 
+a:visited:hover {
+    text-decoration: none;
+    color:red;
+}
+
 /********************************************************/
 
 #map-canvas {
