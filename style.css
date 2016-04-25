@@ -178,7 +178,7 @@ a:visited:hover {
     z-index: 3;
     background-color: aqua;
     top:100px;
-    display:block;
+    display:none;
 }
 
 .smallTitle:hover + info {
