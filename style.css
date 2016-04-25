@@ -200,6 +200,7 @@ a:visited:hover {
     position:absolute;
     z-index: 3;
     width:340px;
+    float:right;
 }
 /********************************************************/
 
