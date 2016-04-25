@@ -25,6 +25,9 @@
         <div id="overlay2">
             <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
         </div>
+        <div id="info">
+
+        </div>
         <div id="map-canvas">
         </div>
         <div id="mainMenu">

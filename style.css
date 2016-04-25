@@ -171,6 +171,19 @@ a:visited:hover {
     color:red;
 }
 
+#info {
+    position:absolute;
+    width:300px;
+    height:50px;
+    z-index: 3;
+    background-color: aqua;
+    display:none;
+}
+
+.smallTitle:hover + info {
+    display: block;
+}
+
 /********************************************************/
 
 #map-canvas {
