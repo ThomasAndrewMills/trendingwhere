@@ -186,18 +186,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker3);
     });
@@ -212,18 +212,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker4);
     });
@@ -238,18 +238,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map, marker5);
     });
@@ -264,18 +264,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map, marker6);
     });
@@ -290,18 +290,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker7);
     });
@@ -316,18 +316,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker8);
     });
@@ -342,18 +342,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker9);
     });
@@ -368,18 +368,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker10);
     });
@@ -394,18 +394,18 @@ function initialize() {
             var trend = document.getElementsByClassName('trend');
 
             //taking the data received in JSON and adding the trends to the pop-up menu
-            trend[0].innerHTML = obj.responseJSON[0].trends[0].name;
-            trend[1].innerHTML = obj.responseJSON[0].trends[1].name;
-            trend[2].innerHTML = obj.responseJSON[0].trends[2].name;
-            trend[3].innerHTML = obj.responseJSON[0].trends[3].name;
-            trend[4].innerHTML = obj.responseJSON[0].trends[4].name;
-            trend[5].innerHTML = obj.responseJSON[0].trends[5].name;
-            trend[6].innerHTML = obj.responseJSON[0].trends[6].name;
-            trend[7].innerHTML = obj.responseJSON[0].trends[7].name;
-            trend[8].innerHTML = obj.responseJSON[0].trends[8].name;
-            trend[9].innerHTML = obj.responseJSON[0].trends[9].name;
-            trend[10].innerHTML = obj.responseJSON[0].trends[10].name;
-            trend[11].innerHTML = obj.responseJSON[0].trends[11].name;
+            trend[0].innerHTML= '<a href="' + obj.responseJSON[0].trends[0].url + '" target="_blank">' + obj.responseJSON[0].trends[0].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[0].tweet_volume != null) ? obj.responseJSON[0].trends[0].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[1].innerHTML= '<a href="' + obj.responseJSON[0].trends[1].url + '" target="_blank">' + obj.responseJSON[0].trends[1].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[1].tweet_volume != null) ? obj.responseJSON[0].trends[1].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[2].innerHTML= '<a href="' + obj.responseJSON[0].trends[2].url + '" target="_blank">' + obj.responseJSON[0].trends[2].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[2].tweet_volume != null) ? obj.responseJSON[0].trends[2].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[3].innerHTML= '<a href="' + obj.responseJSON[0].trends[3].url + '" target="_blank">' + obj.responseJSON[0].trends[3].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[3].tweet_volume != null) ? obj.responseJSON[0].trends[3].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[4].innerHTML= '<a href="' + obj.responseJSON[0].trends[4].url + '" target="_blank">' + obj.responseJSON[0].trends[4].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[4].tweet_volume != null) ? obj.responseJSON[0].trends[4].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[5].innerHTML= '<a href="' + obj.responseJSON[0].trends[5].url + '" target="_blank">' + obj.responseJSON[0].trends[5].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[5].tweet_volume != null) ? obj.responseJSON[0].trends[5].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[6].innerHTML= '<a href="' + obj.responseJSON[0].trends[6].url + '" target="_blank">' + obj.responseJSON[0].trends[6].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[6].tweet_volume != null) ? obj.responseJSON[0].trends[6].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + obj.responseJSON[0].trends[7].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + obj.responseJSON[0].trends[8].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
         });
         infowindow.open(map,marker11);
     });
