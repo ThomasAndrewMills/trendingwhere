@@ -144,7 +144,7 @@ function initialize() {
     });
 
     function resetContent(){
-        var content =       '<div class="trendsMenuContainer">' +
+        content =       '<div class="trendsMenuContainer">' +
             '<div class="cityTitle">' +
             '' +
             '</div>' +
