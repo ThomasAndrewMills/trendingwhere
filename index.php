@@ -42,7 +42,7 @@
                     Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson
                 </p>
             </div>
-            <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
+            <span class="smallTitle">#trendingWhere?</span>
         </div>
         <div id="map-canvas">
         </div>
