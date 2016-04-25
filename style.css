@@ -191,7 +191,7 @@ a:visited:hover {
     /*display:none;*/
 }
 
-#overlay2:hover + #info {
+#infoContainer:hover + #info {
     display: block;
 }
 
