@@ -59,6 +59,7 @@
                                 $('#overlay').hide();
                                 $('#mainMenu').hide();
                                 $('#overlay2').show();
+                                $('#infoContainer').show();
                             });
                         });
                         </script>
