@@ -23,7 +23,6 @@
 
         </div>
         <div id="infoContainer">
-            <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
             <div id="info">
                 <h3 style="margin:0px;font-size:30px;">How to use</h3>
                 <p style="font-size:13px;">
@@ -43,6 +42,7 @@
                     Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson
                 </p>
             </div>
+            <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
         </div>
         <div id="map-canvas">
         </div>
