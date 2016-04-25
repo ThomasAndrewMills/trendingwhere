@@ -177,7 +177,7 @@ a:visited:hover {
     height:50px;
     z-index: 3;
     background-color: aqua;
-    display:none;
+    display:block;
 }
 
 .smallTitle:hover + info {
