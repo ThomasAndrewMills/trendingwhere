@@ -40,7 +40,7 @@
 
                 </p>
                 <p style="font-size:13px;">
-                    Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson
+                    Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Melia, Callum Robertson
                 </p>
             </div>
 
