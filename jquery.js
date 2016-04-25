@@ -143,6 +143,32 @@ function initialize() {
         title:"Los Angeles"
     });
 
+    function resetContent(){
+        var content =       '<div class="trendsMenuContainer">' +
+            '<div class="cityTitle">' +
+            '' +
+            '</div>' +
+            '<div class="trendsGroup">' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '</div>'+
+            '<div class="trendsGroup">' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '</div>'+
+            '<div class="trendsGroup">' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '</div>' +
+            '</div>';
+    }
+
     //marker listeners
     google.maps.event.addListener(marker1, 'click', function () {
         var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=21125'), function (result) {
@@ -171,6 +197,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map, marker1);
     });
@@ -198,6 +225,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker3);
     });
@@ -224,6 +252,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker4);
     });
@@ -250,6 +279,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map, marker5);
     });
@@ -276,6 +306,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map, marker6);
     });
@@ -302,6 +333,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker7);
     });
@@ -328,6 +360,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker8);
     });
@@ -354,6 +387,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker9);
     });
@@ -380,6 +414,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker10);
     });
@@ -406,6 +441,7 @@ function initialize() {
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + obj.responseJSON[0].trends[9].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + obj.responseJSON[0].trends[10].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" + '</span>' : '</span><br>');
             trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + obj.responseJSON[0].trends[11].name + '</a><br><span class="tweetVolume">' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" + '</span>' : '</span><br>');
+            resetContent();
         });
         infowindow.open(map,marker11);
     });
