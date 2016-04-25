@@ -147,8 +147,13 @@ html, body {
 
 }
 
+.tweetVolume{
+    color: #929292;
+}
+
 a:link {
     text-decoration: none;
+    color:black;
 }
 
 a:hover {
@@ -157,7 +162,7 @@ a:hover {
 
 a:visited {
     text-decoration: none;
-    color:darkblue;
+    color:black;
 }
 
 /********************************************************/
