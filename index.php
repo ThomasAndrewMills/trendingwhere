@@ -27,17 +27,17 @@
         </div>
         <div id="info">
             <h3 style="margin:0px;font-size:20px;">How to use</h3>
-            <p>
+            <p style="font-size:10px;">
                 Start by selecting a red marker over a city.
             </p>
 
-            <p>
+            <p style="font-size:10px;">
                 Click on each trend to search for it on Twitter.
             </p>
-            <p>
+            <p style="font-size:10px;">
                 The amount of tweets about each trend is also displayed.
             </p>
-            <p>
+            <p style="font-size:10px;">
 
             </p>
             <p style="font-size:10px;">
