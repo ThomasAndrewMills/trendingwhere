@@ -188,7 +188,7 @@ a:visited:hover {
     color:white;
     padding:5px;
     text-align: left;
-    /*display:none;*/
+    display:none;
 }
 
 #infoContainer:hover + #info {
