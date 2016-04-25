@@ -145,7 +145,7 @@ function initialize() {
 
     //marker listeners
     google.maps.event.addListener(marker1, 'click', function () {
-        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=21125'), function (result) {
+        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=1'), function (result) {
 
             //adding the city title to the pop-up menu
             var cityTitle = document.getElementsByClassName('cityTitle');
