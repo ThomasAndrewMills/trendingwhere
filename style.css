@@ -203,6 +203,10 @@ a:visited:hover {
     vertical-align:bottom;
     bottom:20px;
 }
+
+.smallTitle:hover{
+     text-shadow: 1px 0px 27px rgba(255, 255, 255, 1);
+ }
 /********************************************************/
 
 #map-canvas {
