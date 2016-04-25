@@ -27,7 +27,7 @@
         </div>
         <div id="info">
             <h3 style="margin:0px;font-size:20px;">How to use</h3>
-            <p style="font-size:20px;">
+            <p style="font-size:10px;">
                 Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson,
             </p>
         </div>
