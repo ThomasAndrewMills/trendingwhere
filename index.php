@@ -27,6 +27,9 @@
         </div>
         <div id="info">
             <h3 style="margin:0px;">How to use</h3>
+            <p>
+                Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson,
+            </p>
         </div>
         <div id="map-canvas">
         </div>
