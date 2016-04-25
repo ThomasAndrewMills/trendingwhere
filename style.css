@@ -144,7 +144,8 @@ html, body {
     text-shadow: 2px 1px 16px rgba(0, 0, 0, 1);
     padding:20px;
     padding-top:40px;
-
+    position:absolute;
+    float:right;
 }
 
 .tweetVolume{
