@@ -201,6 +201,7 @@ a:visited:hover {
     z-index: 3;
     width:340px;
     right: 0;
+    vertical-align:bottom;
 }
 /********************************************************/
 
