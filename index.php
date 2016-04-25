@@ -26,7 +26,7 @@
             <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
         </div>
         <div id="info">
-            <h3>How to use</h3>
+            <h3 style="margin:0px;">How to use</h3>
         </div>
         <div id="map-canvas">
         </div>
