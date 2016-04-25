@@ -27,6 +27,19 @@
         </div>
         <div id="info">
             <h3 style="margin:0px;font-size:20px;">How to use</h3>
+            <p>
+                Start by selecting a red marker over a city.
+            </p>
+
+            <p>
+                Click on each trend to search for it on Twitter.
+            </p>
+            <p>
+                The amount of tweets about each trend is also displayed.
+            </p>
+            <p>
+
+            </p>
             <p style="font-size:10px;">
                 Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson,
             </p>
