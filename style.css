@@ -143,7 +143,6 @@ html, body {
     color:#FFFFFF;
     text-shadow: 2px 1px 16px rgba(0, 0, 0, 1);
     padding:20px;
-    padding-top:40px;
 
 
 }
@@ -188,7 +187,6 @@ a:visited:hover {
     padding:5px;
     text-align: left;
     /*display:none;*/
-    margin-bottom:200px;
 }
 
 .smallTitle:hover + #info {
