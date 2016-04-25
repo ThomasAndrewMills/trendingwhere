@@ -186,7 +186,7 @@ a:visited:hover {
     padding:5px;
     text-align: left;
     /*display:none;*/
-    margin-left:10px;
+    margin-left:50px;
 }
 
 .smallTitle:hover + #info {
