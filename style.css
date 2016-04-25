@@ -180,9 +180,9 @@ a:visited:hover {
     background: rgba(0, 0, 0, 0.6);
     top:55px;
     left:20px;
-    -webkit-box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
-    box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 9px 15px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 6px 9px 15px 1px rgba(255,255,255,1);
+    box-shadow: 6px 9px 15px 1px rgba(255,255,255,1);
     border-radius:2px;
     font-family: 'Bitter', sans-serif;
     color:white;
