@@ -186,6 +186,7 @@ a:visited:hover {
     border-radius:2px;
     font-family: 'Bitter', sans-serif;
     color:white;
+    padding:5px;
     /*display:none;*/
 }
 
