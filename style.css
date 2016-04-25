@@ -194,6 +194,9 @@ a:visited:hover {
     display: block;
 }
 
+#infoContainer{
+    text-align: center;
+}
 /********************************************************/
 
 #map-canvas {
