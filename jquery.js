@@ -169,8 +169,8 @@ function initialize() {
             trend[7].innerHTML= '<a href="' + obj.responseJSON[0].trends[7].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[7].name + '</b></a><br>' + ((obj.responseJSON[0].trends[7].tweet_volume != null) ? obj.responseJSON[0].trends[7].tweet_volume + " tweets" : '<br>');
             trend[8].innerHTML= '<a href="' + obj.responseJSON[0].trends[8].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[8].name + '</b></a><br>' + ((obj.responseJSON[0].trends[8].tweet_volume != null) ? obj.responseJSON[0].trends[8].tweet_volume + " tweets" : '<br>');
             trend[9].innerHTML= '<a href="' + obj.responseJSON[0].trends[9].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[9].name + '</b></a><br>' + ((obj.responseJSON[0].trends[9].tweet_volume != null) ? obj.responseJSON[0].trends[9].tweet_volume + " tweets" : '<br>');
-            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[10].name + '</b></a><br>' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" : +'<br>');
-            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[11].name + '</b></a><br>' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" : +'<br>');
+            trend[10].innerHTML= '<a href="' + obj.responseJSON[0].trends[10].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[10].name + '</b></a><br>' + ((obj.responseJSON[0].trends[10].tweet_volume != null) ? obj.responseJSON[0].trends[10].tweet_volume + " tweets" : '<br>');
+            trend[11].innerHTML= '<a href="' + obj.responseJSON[0].trends[11].url + '" target="_blank">' + '<b>' + obj.responseJSON[0].trends[11].name + '</b></a><br>' + ((obj.responseJSON[0].trends[11].tweet_volume != null) ? obj.responseJSON[0].trends[11].tweet_volume + " tweets" : '<br>');
         });
         infowindow.open(map, marker1);
     });
