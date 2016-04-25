@@ -189,6 +189,7 @@ a:visited:hover {
     text-align: left;
     /*display:none;*/
     margin-bottom:200px;
+    vertical-align:bottom;
 }
 
 .smallTitle:hover + #info {
