@@ -26,21 +26,21 @@
             <span class="smallTitle">#trending<span class="titleColourEdit">Where?</span></span>
         </div>
         <div id="info">
-            <h3 style="margin:0px;font-size:20px;">How to use</h3>
-            <p style="font-size:10px;">
+            <h3 style="margin:0px;font-size:30px;">How to use</h3>
+            <p style="font-size:16px;">
                 Start by selecting a red marker over a city.
             </p>
 
-            <p style="font-size:10px;">
+            <p style="font-size:16px;">
                 Click on each trend to search for it on Twitter.
             </p>
-            <p style="font-size:10px;">
+            <p style="font-size:16px;">
                 The amount of tweets about each trend is also displayed.
             </p>
-            <p style="font-size:10px;">
+            <p style="font-size:16px;">
 
             </p>
-            <p style="font-size:10px;">
+            <p style="font-size:16px;">
                 Developed by Thomas Mills, Darren Williamson, Ciaran Miller, Callum Meilia, Callum Robertson,
             </p>
         </div>
