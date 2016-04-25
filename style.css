@@ -197,10 +197,10 @@ a:visited:hover {
 
 #infoContainer{
     text-align: center;
-    position:static;
+    position:absolute;
     z-index: 3;
     width:340px;
-    float:right;
+    right: 0;
 }
 /********************************************************/
 
