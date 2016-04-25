@@ -145,6 +145,7 @@ html, body {
     padding:20px;
     padding-top:40px;
 
+
 }
 
 .tweetVolume{
@@ -178,8 +179,6 @@ a:visited:hover {
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.6);
     background: rgba(0, 0, 0, 0.6);
-    top:55px;
-    left:20px;
     -webkit-box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
     box-shadow: 6px 9px 15px 1px rgba(0,0,0,0.75);
@@ -188,7 +187,8 @@ a:visited:hover {
     color:white;
     padding:5px;
     text-align: left;
-    display:none;
+    /*display:none;*/
+    margin-bottom:200px;
 }
 
 .smallTitle:hover + #info {
@@ -197,10 +197,11 @@ a:visited:hover {
 
 #infoContainer{
     text-align: center;
-    position:relative;
+    position:absolute;
     z-index: 3;
     width:340px;
-    float:right;
+    right: 0;
+    vertical-align:bottom;
 }
 /********************************************************/
 
