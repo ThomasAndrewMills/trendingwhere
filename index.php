@@ -63,7 +63,7 @@
                             });
                         });
                     </script>
-                        Sign in using your twitter account and explore the trending topics<br> of cities around the world!
+                        Explore the trending topics<br> of cities around the world!
                     </span>
         <br>
         <br>
