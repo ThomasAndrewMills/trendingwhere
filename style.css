@@ -73,8 +73,8 @@ html, body {
     box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
     text-shadow: #7ea4bd 0 1px 0;
     color: #363d40;
-    font-size: 18px;
-    font-family: helvetica, serif;
+    font-family:'Bitter', serif;
+    font-size:12pt;
     text-decoration: none;
     vertical-align: middle;
     margin-bottom: 5px;
