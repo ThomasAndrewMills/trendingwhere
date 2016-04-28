@@ -63,7 +63,7 @@
                             });
                         });
                     </script>
-                        Explore the trending topics of cities around the world!
+                        Explore the trending topics of cities around the world!</br>
                     </span>
         <br>
         <br>
