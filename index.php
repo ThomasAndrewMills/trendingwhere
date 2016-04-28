@@ -67,7 +67,7 @@
                     </span>
         <br>
         <br>
-        <img src="map.png" class="trendingWhereInterface">
+        <img src="maps.png" class="trendingWhereInterface">
                 <span class="bulletPointText">
                     <ul>
                         <li>Pan across the map by clicking and dragging your mouse.</li>
