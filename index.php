@@ -73,7 +73,7 @@
                         <li>Pan across the map by clicking and dragging your mouse.</li>
                         <li>Select your chosen city by clicking on the marker.</li>
                         <li>The top 12 trending topics for that city will be displayed.</li>
-                        <li>Get started by clicking button below!</li>
+                        <li>Get started by clicking the button below!</li>
                     </ul>
                     <a href='#' class='start'>Begin</a>
                 </span>
