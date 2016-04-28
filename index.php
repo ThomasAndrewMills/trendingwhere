@@ -75,7 +75,7 @@
                         <li>The top 12 trending topics for that city will be displayed.</li>
                         <li>Get started by signing in to twitter with the button below!</li>
                     </ul>
-                    <a href="#"><img src="signInTwitter.png" class="signInTwitter"></a>
+                    <a href='#' class='start'>Begin</a>
                 </span>
             </div>
         </div>
