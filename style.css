@@ -76,7 +76,7 @@ html, body {
     font-family:'Bitter', serif;
     font-size:12pt;
     text-decoration: none;
-    vertical-align: middle;
+    float:right;
     margin-bottom: 60%;
 }
 
