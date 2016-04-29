@@ -64,7 +64,8 @@ html, body {
     background: -ms-linear-gradient(top, #ffffff, #7c8285);
     background: -o-linear-gradient(top, #ffffff, #7c8285);
     background-image: -ms-linear-gradient(top, #ffffff 0%, #7c8285 100%);
-    padding: 80px 80px;
+    padding-right: 80px;
+    padding-left: 80px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
