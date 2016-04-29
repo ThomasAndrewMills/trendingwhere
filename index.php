@@ -56,7 +56,7 @@
 
                         $(document).ready(function () {
                             $(".start").click(function () {
-                                $('#overlay').hide();
+                                $('#overlay').fadeOut();
                                 $('#mainMenu').hide();
                                 $('#overlay2').show();
                                 $('#infoContainer').show();
