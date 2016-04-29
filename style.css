@@ -86,10 +86,6 @@ html, body {
     padding-bottom:10px;
 }
 
-.button:hover{
-    color:darkblue;
-}
-
 #trendsMenu{
     width:590px;
     height:270px;
