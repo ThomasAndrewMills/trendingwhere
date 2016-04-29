@@ -75,7 +75,7 @@
                         <li>The top 12 trending topics for that city will be displayed.</li>
                         <li>Get started by clicking the button below!</li>
                     </ul>
-                    <a href='#' class='start'>Start</a>
+                    <a class='start'>Start</a>
                 </span>
     </div>
 </div>
