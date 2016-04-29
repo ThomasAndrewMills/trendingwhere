@@ -80,6 +80,10 @@ html, body {
     margin:  0px 0px 0px 50px;
 }
 
+.start a:hover{
+    color:dark blue
+}
+
 #trendsMenu{
     width:590px;
     height:270px;
