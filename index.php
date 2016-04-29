@@ -58,8 +58,8 @@
                             $(".start").click(function () {
                                 $('#overlay').fadeOut();
                                 $('#mainMenu').fadeOut();
-                                $('#overlay2').show();
-                                $('#infoContainer').show();
+                                $('#overlay2').fadeIn();
+                                $('#infoContainer').fadeIn();
                             });
                         });
                     </script>
