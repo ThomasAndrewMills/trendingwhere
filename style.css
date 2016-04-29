@@ -80,7 +80,7 @@ html, body {
     margin:  0px 0px 0px 0px;
 }
 
-.start:hover{
+.start a:hover{
     color:darkblue;
 }
 
