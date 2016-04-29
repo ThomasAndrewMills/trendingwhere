@@ -56,8 +56,8 @@
 
                         $(document).ready(function () {
                             $(".start").click(function () {
-                                $('#overlay').fadeOut();
-                                $('#mainMenu').fadeOut();
+                                $('#overlay').slideUp();
+                                $('#mainMenu').slideUp();
                                 $('#overlay2').fadeIn();
                                 $('#infoContainer').fadeIn();
                             });
