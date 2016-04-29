@@ -57,7 +57,7 @@
                         $(document).ready(function () {
                             $(".start").click(function () {
                                 $('#overlay').fadeOut();
-                                $('#mainMenu').slideUp();
+                                $('#mainMenu').fadeOut();
                                 $('#overlay2').fadeIn();
                                 $('#infoContainer').fadeIn();
                             });
