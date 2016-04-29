@@ -65,8 +65,8 @@ html, body {
     background: -o-linear-gradient(top, #ffffff, #7c8285);
     background-image: -ms-linear-gradient(top, #ffffff 0%, #7c8285 100%);
     padding: 11px 22px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
     -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
