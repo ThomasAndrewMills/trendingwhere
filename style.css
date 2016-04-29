@@ -66,6 +66,7 @@ html, body {
     background-image: -ms-linear-gradient(top, #ffffff 0%, #7c8285 100%);
     padding-right: 80px;
     padding-left: 80px;
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -79,6 +80,8 @@ html, body {
     text-decoration: none;
     float:right;
     margin-bottom:20px;
+    float:right;
+    margin-top:70px;
 }
 
 .button:hover{
@@ -107,10 +110,7 @@ html, body {
     display:inline-block;
 }
 
-.start {
-    float:right;
-    margin-top:50px;
-}
+
 
 .bulletPointText{
     font-family:'Bitter', serif;
