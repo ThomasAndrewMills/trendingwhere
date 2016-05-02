@@ -1,8 +1,17 @@
-//defining the center of the map
+//some jQuery code for fade in and fade out transitions once the user has clicked the 'start' button.
+$(document).ready(function () {
+    $(".start").click(function () {
+        $('#overlay').fadeOut();
+        $('#mainMenu').fadeOut();
+        $('#overlay2').fadeIn();
+        $('#infoContainer').fadeIn();
+    });
+});
+
+//defining the center of the google map
 var center = new google.maps.LatLng(55.864237,-4.251806);
 
-
-
+//some google maps settings
 function initialize() {
     var mapOptions = {
         center: center,
@@ -21,27 +30,27 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
     //pop up trends menu
-    var content =       '<div class="trendsMenuContainer">' +
-        '<div class="cityTitle">' +
-        '' +
-        '</div>' +
+    var content =
+        '<div class="trendsMenuContainer">' +
+            '<div class="cityTitle">' +
+            '</div>' +
         '<div class="trendsGroup">' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
         '</div>'+
-        '<div class="trendsGroup">' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
+            '<div class="trendsGroup">' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
         '</div>'+
-        '<div class="trendsGroup">' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
-        '<div class="trend"></div>' +
+            '<div class="trendsGroup">' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
+            '<div class="trend"></div>' +
         '</div>' +
         '</div>';
 
