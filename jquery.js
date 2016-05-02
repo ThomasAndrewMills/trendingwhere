@@ -1,12 +1,4 @@
-//some jQuery code for fade in and fade out transitions once the user has clicked the 'start' button.
-$(document).ready(function () {
-    $(".start").click(function () {
-        $('#overlay').fadeOut();
-        $('#mainMenu').fadeOut();
-        $('#overlay2').fadeIn();
-        $('#infoContainer').fadeIn();
-    });
-});
+
 
 //defining the center of the google map
 var center = new google.maps.LatLng(55.864237,-4.251806);
