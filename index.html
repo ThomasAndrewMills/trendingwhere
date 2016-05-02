@@ -1,37 +1,38 @@
 <!--DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER-->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <title>
-        trendingwhere?
-    </title>
+<html>
+    <head>
+        <title>
+            trendingwhere?
+        </title>
 
-    <!--Styling the page-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <!--Styling the page-->
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--Linking the Google maps API to the website-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
+        <!--Linking the Google maps API to the website-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
 
-    <!--Linking jQuery file in order to load the Google map and trends-->
-    <script type="text/javascript" src="jquery.js"></script>
+        <!--Linking jQuery file in order to load the Google map and trends-->
+        <script type="text/javascript" src="jquery.js"></script>
 
-    <!--Linking the website to to the jQuery library-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!--Linking the website to to the jQuery library-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-    <!--Importing some fonts from Google fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
+        <!--Importing some fonts from Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
 
-    <!--some jQuery code for fade in and fade out transitions once the user has clicked the 'start' button.-->
-    <script>
-        $(document).ready(function () {
-            $(".start").click(function () {
-                $('#overlay').fadeOut();
-                $('#mainMenu').fadeOut();
-                $('#overlay2').fadeIn();
-                $('#infoContainer').fadeIn();
+        <!--some jQuery code for fade in and fade out transitions once the user has clicked the 'start' button.-->
+        <script>
+            $(document).ready(function () {
+                $(".start").click(function () {
+                    $('#overlay').fadeOut();
+                    $('#mainMenu').fadeOut();
+                    $('#overlay2').fadeIn();
+                    $('#infoContainer').fadeIn();
+                });
             });
-        });
-    </script>
+        </script>
     </head>
     <body>
         <!--A black transparent overlay over the google map.
