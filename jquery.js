@@ -23,10 +23,10 @@ function initialize() {
 
     //pop up trends menu
     var content =
-        '<div class="trendsMenuContainer">' +
-            '<div class="cityTitle">' +
+        '<section class="trendsMenuContainer">' +
+            '<section class="cityTitle">' +
             '</div>' +
-        '<div class="trendsGroup">' +
+        '<section class="trendsGroup">' +
             '<div class="trend"></div>' +
             '<div class="trend"></div>' +
             '<div class="trend"></div>' +

@@ -222,10 +222,12 @@ a:visited:hover {
     border-radius: 5px 5px 5px 5px;
     height:300px;
 }
+
 #iw-container {
     margin-bottom: 10px;
     width:900px;
 }
+
 #iw-container .iw-title {
     font-family: 'Bitter', serif;
     font-size: 22px;
