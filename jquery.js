@@ -1,4 +1,4 @@
-
+//DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER
 
 //defining the center of the google map
 var center = new google.maps.LatLng(55.864237,-4.251806);
