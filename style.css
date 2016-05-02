@@ -213,21 +213,19 @@ a:visited:hover {
 }
 
 .gm-style-iw {
-    width: 550px;
-    top: 15px;
-    left: 0px;
+    width: 550px !important;
+    top: 15px !important;
+    left: 0px !important;
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(144, 144, 144, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 5px 5px;
     height:300px;
 }
-
 #iw-container {
     margin-bottom: 10px;
     width:900px;
 }
-
 #iw-container .iw-title {
     font-family: 'Bitter', serif;
     font-size: 22px;
@@ -237,13 +235,13 @@ a:visited:hover {
     margin: 0;
     border-radius: 2px 2px 0 0;
 }
-
 #iw-container .iw-content {
     line-height: 18px;
     font-weight: 400;
     margin-right: 1px;
     padding: 15px 5px 20px 15px;
 }
+
 p{
     font-size:13px;
 }
